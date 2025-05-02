@@ -49,11 +49,11 @@ if (hit.transform.TryGetComponent<IInteractable>(out var interactable)) {
 
 | Principle                | Applied?                                                           | How |
 | ------------------------ | ------------------------------------------------------------------ | --- |
-| Single Responsibility ✅  | Item state, animation, and interaction split into separate classes |     |
-| Open/Closed ✅            | Interactions extended via interfaces, not modified                 |     |
-| Liskov Substitution 🟡   | Planning to implement more reusable object types                   |     |
-| Interface Segregation 🟡 | Just starting with basic `IInteractable`, will expand              |     |
-| Dependency Inversion 🟡  | Future goal (event-based architecture, scriptable objects)         |     |
+| Single Responsibility | ✅ | Item state, animation, and interaction split into separate classes |
+| Open/Closed | ✅ | Interactions extended via interfaces, not modified |
+| Liskov Substitution | 🟡 | Planning to implement more reusable object types |
+| Interface Segregation | 🟡 | Just starting with basic `IInteractable`, will expand |
+| Dependency Inversion | 🟡 | Future goal (event-based architecture, scriptable objects) |
 
 ---
 
