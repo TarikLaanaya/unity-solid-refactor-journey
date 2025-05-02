@@ -33,7 +33,7 @@ switch (hit.transform.tag) {
     case "Knife":
         IsKnifeInteractedWith();
         break;
-    // ...many more
+    // ...many more (atleasst 15 😬😅)
 }
 ```
 
@@ -43,3 +43,26 @@ if (hit.transform.TryGetComponent<IInteractable>(out var interactable)) {
     interactable.OnInteract();
 }
 ```
+---
+
+## 📚 SOLID Principles Practiced
+
+| Principle                | Applied?                                                           | How |
+| ------------------------ | ------------------------------------------------------------------ | --- |
+| Single Responsibility ✅  | Item state, animation, and interaction split into separate classes |     |
+| Open/Closed ✅            | Interactions extended via interfaces, not modified                 |     |
+| Liskov Substitution 🟡   | Planning to implement more reusable object types                   |     |
+| Interface Segregation 🟡 | Just starting with basic `IInteractable`, will expand              |     |
+| Dependency Inversion 🟡  | Future goal (event-based architecture, scriptable objects)         |     |
+
+---
+
+## 📈 What I’m Learning
+
+* How to refactor real Unity gameplay code using SOLID
+
+* How to separate logic into clean systems
+
+* How to design scalable interaction systems
+
+* How to document and share my dev journey
