@@ -8,6 +8,8 @@ to an `interface-driven` system using **SOLID principles** — specifically focu
 ## 🔁 Old Switch-Based System vs New Interface-Driven System
 
 ### ❌ Original Switch Statement
+The original interaction logic relied on checking tag values in a growing switch block:
+
 ```csharp
 switch (hit.transform.tag)
 {
@@ -92,6 +94,7 @@ else
     DeactivateObjectOutline();
 }
 ```
+By doing this, the interaction logic becomes clean and decoupled.
 
 ---
 
