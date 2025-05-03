@@ -44,6 +44,7 @@ if (hit.transform.TryGetComponent<IInteractable>(out var interactable)) {
     interactable.OnInteract();
 }
 ```
+> For a full explanation of this example check  out the [BeforeAfter_Interactions](https://github.com/TarikLaanaya/unity-solid-refactor-journey/blob/main/Docs/BeforeAfter_Interactions.md) file
 ---
 
 ## 📚 SOLID Principles Practiced
