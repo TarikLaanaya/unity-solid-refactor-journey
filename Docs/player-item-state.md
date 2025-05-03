@@ -1,13 +1,13 @@
 # Player Item State Script
 
-This document showcases a new script I added which essentially works as an **Inventory System**. This solution was a lot more elegant compared to when I was previously **Reading** and **Writing** this information from various scripts.
+This document showcases a new script I added, which essentially functions as a basic inventory system. This solution is far more elegant than my previous approach, where data was passed and managed across several unrelated scripts.
 
 ---
 
 ## 🔁 Old System vs New Inventory System
 
 ### ❌ Original
-The original logic was messy and meant copy and pasting code relating to player inventory:
+The original logic was messy and relied on hardcoded checks and copy-pasted inventory code scattered throughout the project:
 
 ```csharp
 if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -22,7 +22,7 @@ if (Input.GetKeyDown(KeyCode.Mouse0))
 }
 ```
 ### ✅ New System
-In order to simplify this I created the `PlayerItemState` script to handle the player inventory:
+To simplify this I created the `PlayerItemState` script which handles the player inventory:
 
 ```csharp
 public class PlayerItemState : MonoBehaviour
@@ -52,14 +52,21 @@ public class PlayerItemState : MonoBehaviour
 }
 ```
 
-Now I have two handy methods: `ClearItem()` and `SetItem()` which allow me to easily manage inventory
+Now I have two handy methods: `ClearItem()` and `SetItem()` which make managing the player’s inventory significantly cleaner and more intuitive.
 
 ---
 
 ## 📝 Final Notes
 
-This represents the ***Single Responsibility*** principle from the SOLID design principles. Making sure that no one script is pulling all the strings. By separating my code into the `PlayerItemState` script, If I wanted to make a change to the inventory behavior I would
-only have to edit that one script. This also means I have less work to do regarding copying and pasting code. The final benefit is the general readability, I genuinely feel as if I've just cleaned my room and have more space to think.
+This refactor highlights the ***Single Responsibility Principle*** from the SOLID design principles. Making sure that no one script is pulling all the strings. By offloading inventory responsibility to a single script, I’ve made the system:
+
+- Easier to update
+
+- Easier to read
+
+- Easier to reuse
+
+If I want to tweak inventory behavior in the future, I only need to modify one class. No more duplicated logic or scattered inventory state. I genuinely feel as if I've just cleaned my room and have more space to think.
 
 > Although currently my code's better off at an artisnal spaghetti competition. Lets just say i've cleaned a ***corner*** of my room.
 
