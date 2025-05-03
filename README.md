@@ -1,7 +1,8 @@
-# unity-solid-refactor-journey
+# Unity SOLID Refactor Journey
 This repo documents my journey improving a Unity project by applying **SOLID principles** and general clean code architecture techniques.
 
----
+> [!IMPORTANT]
+> The `Docs` folder takes you through my journey, making changes to my projects code. The `Scripts` folder will provide updated versions of key scripts from within the project.
 
 ## 🎯 Goal
 
